@@ -3,6 +3,13 @@ name = "Shake&Tune"
 description = "Klipper streamlined input shaper workflow and calibration tools"
 readme = "README.md"
 requires-python = ">= 3.9"
+dependencies = [
+	"GitPython==3.1.41",
+	"matplotlib==3.8.2",
+	"numpy==1.26.2",
+	"scipy==1.11.4",
+	"PyWavelets==1.6.0",
+]
 authors = [
   {name = "Félix Boisselier", email = "felix@fboisselier.fr"}
 ]
@@ -27,3 +34,8 @@ unfixable = ["B"]
 [tool.ruff.format]
 quote-style = "single"
 skip-magic-trailing-comma = false
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
