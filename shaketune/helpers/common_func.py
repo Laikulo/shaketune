@@ -75,9 +75,7 @@ def parse_log(logname):
 
 
 def setup_klipper_import(kdir):
-    kdir = os.path.expanduser(kdir)
-    sys.path.append(os.path.join(kdir, 'klippy'))
-    return import_module('.shaper_calibrate', 'extras')
+    return import_module('.shaper_calibrate', 'klippy.extras')
 
 
 # This is used to print the current S&T version on top of the png graph file
