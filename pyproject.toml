@@ -40,4 +40,8 @@ skip-magic-trailing-comma = false
 requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
 
+[tool.setuptools.package-data]
+shaketune = [ "*.cfg" ]
+shaketune.graph_creators = [ "klippain.png" ]
+
 [tool.setuptools_scm]
