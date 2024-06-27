@@ -39,7 +39,7 @@ class ShakeTune:
 
             IN_DANGER = True  # check if Shake&Tune is running in DangerKlipper
         except ImportError:
-            continue
+            pass
 
         self._pconfig = config
         self._printer = config.get_printer()
