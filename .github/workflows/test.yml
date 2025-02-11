@@ -50,7 +50,7 @@ jobs:
         run: |
           python3 -m venv --prompt klippy klippy-env
           ./klippy-env/bin/python -m pip install -r klipper/scripts/klippy-requirements.txt
-          ./klippy-env/bin/python -m pip install -r shaketune/requirements.txt
+          ./klippy-env/bin/python -m pip install shaketune/.
       - name: Install shaketune
         run: |
           ln -s $PWD/shaketune/shaketune $PWD/klipper/klippy/extras/shaketune
