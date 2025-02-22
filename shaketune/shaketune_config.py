@@ -10,6 +10,7 @@
 
 from pathlib import Path
 import importlib
+import importlib.metadata
 
 from .helpers.console_output import ConsoleOutput
 
